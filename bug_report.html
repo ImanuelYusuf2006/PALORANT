@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bug Report</title>
+    <link rel="stylesheet" href="Styles/globals.css">
+    <link rel="stylesheet" href="Styles/bug_report.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/credit_pages_putih.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="main-container">
+        <div class="main-area">
+            <h1>BUG REPORT</h1>
+            <div class="main-box">
+                <form class="bug-form" id="bugForm">
+                    <div class="form-columns">
+                        <!-- Left Column -->
+                        <div class="left-column">
+                            <div class="form-section">
+                                <h3>USERNAME <span class="required">*</span></h3>
+                                <div class="gappp"></div>
+                                <input type="text" class="form-input" id="username" placeholder="Your username" required>
+                                <p class="description">Please insert your in-game username.</p>
+                            </div>
+                            <div class="form-section">
+                                <h3>SERVER <span class="required">*</span></h3>
+                                <div class="gappp"></div>
+                                <input type="text" class="form-input" id="server" placeholder="Your server" required>
+                                <p class="description">Please input your in-game server.</p>
+                            </div>
+                            <div class="form-section">
+                                <h3>EMAIL ADDRESS <span class="required">*</span></h3>
+                                <div class="gappp"></div>
+                                <input type="email" class="form-input" id="email" placeholder="Your email" required>
+                                <p class="description">Please enter your email address.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column -->
+                        <div class="right-column">
+                            <div class="form-section">
+                                <h3>DESCRIPTION <span class="required">*</span></h3>
+                                <div class="gappp"></div>
+                                <textarea class="form-textarea" id="description" placeholder="Describe the bug in detail" required></textarea>
+                                <div class="char-counter"><span id="char-count">0</span> / 2000 characters</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Upload Image Center -->
+                    <div class="file-upload-wrapper">
+                        <h4>UPLOAD FILE</h4>
+                        <div class="upload-container">
+                            <label for="file-upload" class="upload-label">
+                                <div class="upload-icon">+</div>
+                                <div class="upload-text">Click to upload image</div>
+                                <input id="file-upload" type="file" accept="image/*" style="display: none;">
+                            </label>
+                            <div class="preview-container" id="preview-container"></div>
+                        </div>
+                        <div class="file-requirements">Supports: JPG, PNG (Max 2MB)</div>
+                    </div>
+                    
+                    <!-- Checkbox -->
+                    <div class="declaration-checkbox">
+                        <input type="checkbox" id="agree-terms" class="checkbox-input" required>
+                        <label for="agree-terms" class="checkbox-label">
+                            By submitting this bug report, I declare that I have read, understood, 
+                            and agreed to all applicable terms and conditions. If it is later found that
+the report I submitted is false, I am prepared to accept any consequences.
+                        </label>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="form-actions">
+                        <button type="reset" class="reset-btn">
+                            <img src="Resources/Additionals/reset.png" alt="Reset" class="btn-icon"> RESET
+                        </button>
+                        <button type="submit" class="submit-btn">
+                            <img src="Resources/Additionals/submit.png" alt="Submit" class="btn-icon"> SUBMIT
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div id="success-popup" class="popup-hidden">Laporan berhasil dikirim!</div> -->
+    <div id="credit_page"></div>
+    
+    <script src="Scripts/bug_report.js"></script>
+    <script src="Scripts/navbar.js" defer></script>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

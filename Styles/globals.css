@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink-color: #ff4655;
+  --background-color: #0f1923;
+  --text-color-black: black;
+  --text-color-white: white;
+  --text-color-red: red;
+  --news-background: #ece8e1;
+  --background-color-black: black;
+}
+
+a {
+  text-decoration: none;
+}

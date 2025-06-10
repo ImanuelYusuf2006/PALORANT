@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Valorant', sans-serif;
+    background-color: var(--background-color);
+    color: white;
+  }
+  
+  .agents-container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .agents-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  
+  .agents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+  }
+  
+  .agent-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .agent-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .agent-image-wrapper .fire {
+    z-index: 2;
+  }
+  
+  .agent-image-wrapper .agent {
+    z-index: 3;
+  }
+
+  .agent-card {
+    background-color: #0d1117;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+  }
+  
+  .agent-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .agent-image-wrapper .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+  }
+  
+  /* .agent-image-wrapper .lamp { z-index: 1; } */
+  .agent-image-wrapper .fire { 
+    filter: hue-rotate(var(--hue-rotate));
+    object-fit: cover;
+    z-index: 2; 
+  }
+  .agent-image-wrapper .agent { 
+    z-index: 3;
+    object-fit: cover;
+    object-position: top center;
+   }
+
+  .agent-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(230, 230, 230, 0.95);
+    color: #000;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Wendy One', sans-serif;
+    font-size: 1.1em;
+    z-index: 4; /* di atas semua gambar */
+  }

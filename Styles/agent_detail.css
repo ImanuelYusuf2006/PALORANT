@@ -1,0 +1,157 @@
+body {
+    background: radial-gradient(circle, #0F1923 0%, #1B252E 100%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /* height: 100vh; */
+}
+
+.container {
+    display: flex;
+    /* position: relative; */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    gap: 60px;
+}
+
+.text-content {
+    padding-right: 50px;
+    padding-left: 50px;
+    z-index: 2;
+    position: relative;
+    width: 800px;
+    /* padding-bottom: 120px; */
+}
+
+.image-wrapper {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+
+.img-preview{
+    position: absolute;
+    z-index: -1;
+    width: 650px;
+    right: 0;
+}
+
+
+h1 {
+    font-size: 100px;
+    font-weight: 700;
+    font-family: "Tw Cen MT Condensed", sans-serif;
+}
+
+.underline {
+    width: 300px;
+    height: 6px;
+    background-color: var(--pink-color);
+    margin: 10px 0;
+}
+
+p {
+    font-family: "Tw Cen MT Condensed", sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.role {
+    padding-top: 80px;
+    font-size: 4rem;
+    font-weight: 700;
+    background-color: transparent;
+    /* padding-bottom: 100px; */
+}
+
+.role span {
+    color: var(--pink-color);
+    background-color: transparent;
+}
+
+
+.target{
+    width: 300px;
+    height: 300px;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: -60px 180px; */
+    /* background-image: url(/Resources/Role/magic.png); */
+    margin-bottom: -200px;
+    z-index: -1;
+}
+
+@media(max-width : 1024px){
+    .text-content {
+        width: 700px;
+    }
+
+    .container{
+        height: 120vh;
+    }
+}
+
+@media(max-width : 768px){
+    body{
+        min-height: 1000px;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+
+    .container{
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.249);
+    }
+
+    h1{
+        padding-top: 30px;
+        font-size: 80px;
+    }
+
+    p{
+        font-size: 36px;
+        max-width: 500px;
+    }
+
+    .target{
+        /* background-color: red; */
+        width: 200px;
+        height: 200px;
+        margin-bottom: -160px;
+    }
+    .role{
+        font-size: 40px;
+    }
+}
+
+
+@media(max-width : 504px){
+
+    h1{
+        padding-top: 30px;
+        font-size: 70px;
+    }
+
+    p{
+        font-size: 26px;
+        max-width: 500px;
+    }
+
+    .container{
+        height: 100vh;
+    }
+}

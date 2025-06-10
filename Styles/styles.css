@@ -1,0 +1,781 @@
+@font-face {
+  font-family: "Suwannaphum";
+  src: url("fonts/Suwannaphum-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add ACME font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url('https://fonts.cdnfonts.com/css/valorant');
+
+
+/* @font-face {
+  font-family: "Acme";
+  src: url("fonts/Acme-Regular.ttf") format("truetype");
+} */
+
+/* Reset and base styles */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+} */
+
+/* :root {
+  --pink-color: #ff4655;
+  --background-color: #0f1923;
+  --text-color-black: black;
+  --text-color-white: white;
+  --text-color-red: red;
+  --news-background: #ece8e1;
+  --background-color-black: black;
+} */
+
+body {
+  background-color: var(--background-color-black);
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+/* Navbar styles */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  /* background-color: var(--background-color); */
+  color: white;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: var(--pink-color);
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hero section styles */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 95.83vh;
+  display: flex;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0f1923 0%, #1b252e 100%);
+}
+
+.hero-content {
+  width: 50%;
+  padding: 50px;
+  z-index: 2;
+  color: white;
+  margin: 0 auto 0 0;
+}
+
+.hero-content h1 {
+  font-family: "VALORANT", sans-serif;
+  font-size: 72px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 3px;
+}
+
+.hero-content p {
+  font-family: "VALORANT", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  max-width: 500px;
+}
+
+.hero-image-container {
+  /* background-color: red; */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* overflow: hidden; */
+  opacity: 0.5;
+}
+
+.hero-image-container img{
+  width: 100%;
+  height: 98%;
+  object-fit: contain;
+  object-position: right;
+  /* top: 0; */
+  z-index: 4;
+  bottom: 0;
+}
+
+/* .hero-image {
+    /* height: 100%; */
+/* width: 100%;
+    height: 95.83vh; Menggunakan viewport height */
+/* max-height: auto; */
+/* width: 100%; */
+/* object-fit: cover;
+    object-position: bottom right; */
+/* z-index: 2; */
+/* } */
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gambar akan menutupi seluruh container */
+  object-position: center bottom; /* Posisi gambar bisa disesuaikan */
+  position: absolute; /* Pastikan ini ada jika container relative */
+}
+
+.title-group {
+  position: relative;
+  height: 48px;
+  width: 100%;
+  z-index: 3;
+}
+
+.title-group h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 48px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+}
+
+.text-red {
+  color: #ff4655;
+  z-index: 3; /* Red in front */
+  text-shadow: 0 0 5px rgba(255, 70, 85, 0.5);
+}
+
+.text-black {
+  color: #000000;
+  transform: translateX(5px); /* Black slightly right */
+  z-index: 2;
+}
+
+.text-white {
+  color: #ffffff;
+  transform: translateX(8px); /* White more right */
+  z-index: 1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Three-layer FALORANT */
+.p-word-stack {
+  position: relative;
+  height: 1.5em; /* Match paragraph line-height */
+  min-width: 120px; /* Fixed width for FALORANT */
+}
+
+.p-word-stack span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: auto;
+}
+
+.p-red {
+  color: #ff4655;
+  z-index: 3;
+  font-family: "VALORANT", sans-serif;
+}
+
+.p-black {
+  color: #000;
+  transform: translateX(2px);
+  z-index: 2;
+  font-family: "VALORANT", sans-serif;
+}
+.p-white {
+  color: #fff;
+  transform: translateX(4px);
+  z-index: 1;
+  font-family: "VALORANT", sans-serif;
+}
+
+/* Paragraph text */
+.inline-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: white;
+  flex: 1;
+  margin-left: 30px;
+}
+
+.inline-text strong {
+  font-weight: bold;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Regular paragraph text */
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10; /* Ensure text appears above any backgrounds */
+}
+
+.first-line {
+  font-family: "VALORANT", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-left: 93px;
+}
+
+.red-box {
+  position: relative;
+  width: 100%;
+  height: 95.83vh; /* Menggunakan viewport height */
+  display: flex;
+  overflow: hidden;
+  background-color: var(--pink-color);
+}
+
+/* Adjust the hero-container to account for the new box */
+.hero-container {
+  margin-bottom: 0;
+}
+
+.red-box {
+  position: relative;
+  background-color: #ff4655;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background-image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.background-image-container {
+  opacity: 0.45;
+}
+
+.agent-section {
+  position: relative;
+  z-index: 3; /* Above background */
+  padding: 80px 0;
+}
+
+.agent-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* align-items: center; */
+  gap: 50px;
+  padding: 0 40px;
+}
+
+.agent-image{
+  /* background-color: blue; */
+  height: fit-content;
+  margin-top: -30px;
+}
+
+/* Rest of your existing agent styles */
+.agent-image img {
+  width: 540px;
+  height: 540px;
+  /* background-color: red; */
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7));
+}
+
+.agent-image-double{
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.agent-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.agent-title {
+  font-family: "Tw Cen MT Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.agent-description {
+  font-family: "Suwannaphum", serif;
+  font-size: 20px;
+  line-height: 1.8;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.agent-button {
+  margin-top: 20px;
+  font-family: "Acme", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #0f1923;
+  border: none;
+  padding: 18px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.agent-button:hover {
+  background-color: var(--news-background);
+  color: #000;
+  transform: translateY(-3px);
+}
+/* NEWS SECTION */
+@import url("https://fonts.googleapis.com/css2?family=Unica+One:wght@400;500&display=swap");
+@import url("https://fonts.cdnfonts.com/css/valorant");
+
+.latest-news-container {
+  padding: 0, 0, 0, 40px;
+  background-color: #ece8e1;
+  font-family: "VALORANT", sans-serif;
+}
+
+.latest-news-title {
+  color: #ffffff;
+  padding-top: 45px;
+  padding-left: 30px;
+  background-color: var(--background-color);
+  font-family: "Valorant", sans-serif;
+  width: 100%;
+  font-size: 72px;
+  height: 150px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.news-item {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.news-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* border-bottom: 3px solid #FF4655; */
+}
+
+.news-category {
+  position: absolute;
+  /* top: 20px;
+  left: 20px; */
+  /* background-color: #0F1923; */
+  /* color: #FF4655; */
+  padding-left: 20px;
+  padding-top: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  font-family: "Valorant", sans-serif;
+}
+
+.news-date {
+  color: #0f1923;
+  font-size: 16px;
+  padding-left: 170px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: "Valorant", sans-serif;
+  padding-top: 4px;
+}
+
+.news-headline {
+  font-family: "Unica One", sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+  color: #0f1923;
+  padding-left: 20px;
+  padding-top: 5px;
+  /* margin: 10px 0; */
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.news-excerpt {
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #0f1923;
+  padding: 0 20px 20px;
+  line-height: 1.5;
+}
+
+/* Category Specific Colors */
+.patch-note {
+  color: #ff4655;
+}
+.esport {
+  color: #ff4655;
+}
+.game-update {
+  color: #ff4655;
+}
+
+.news-item {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover{
+  transform: scale(1.05);
+}
+
+/* MAPS PAGE */
+/* @import url('https://fonts.cdnfonts.com/css/tw-cen-mt-condensed');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap'); */
+
+/* Font Faces */
+@font-face {
+  font-family: "Suwannaphum";
+  src: url("fonts/Suwannaphum-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suwannaphum";
+  src: url("fonts/Suwannaphum-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Base Styles */
+.map-section {
+  background-color: #ece8e1;
+  /* padding-top: 80px; */
+  overflow: hidden;
+}
+
+.map-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 600px;
+}
+
+/* Text Content (Left) */
+.map-content {
+  flex: 1;
+  padding: 0 40px;
+  z-index: 2;
+  max-width: 600px;
+  margin-right: auto;
+}
+
+.map-title {
+  font-family: "Tw Cen MT Condensed", sans-serif;
+  font-weight: 800;
+  font-stretch: condensed;
+  font-size: 72px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ff4655;
+  padding-top: 80px;
+}
+
+.map-subtitle {
+  font-family: "Suwannaphum", serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #0f1923;
+}
+
+.map-description {
+  font-family: "Suwannaphum", serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.map-divider {
+  width: 100px;
+  height: 3px;
+  background-color: #ff4655;
+  margin: 30px 0;
+}
+
+.map-button {
+  font-family: "Acme", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #0f1923;
+  border: none;
+  padding: 18px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.map-button:hover {
+  background-color: #ff4655;
+  transform: translateY(-3px);
+}
+
+/* Image (Right - Edge) */
+.map-image-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+
+.map-image {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: right center;
+}
+
+/* Responsive Design */
+/* @media (max-width: 1024px) {
+  .map-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .map-content {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .map-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+
+  .map-image {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+  }
+} */
+
+/* Optional: Add responsive design */
+@media (max-width: 768px) {
+  .gradient-box {
+    height: 60px;
+  }
+
+  .first-line {
+    white-space: normal; /* Allows wrapping on small screens */
+  }
+
+  .paragraph-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .paragraph-align{
+    position: absolute;
+    width: 300px;
+  }
+
+  .p-word-stack {
+    height: 1em;
+    margin-bottom: 30px;
+  }
+
+  .agent-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .agent-title {
+    font-size: 36px;
+  }
+
+  .agent-description {
+    font-size: 16px;
+  }
+  .agent-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .agent-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .agent-description {
+    font-size: 16px;
+  }
+
+  .view-all-box {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+
+  .latest-news-title{
+    font-size: 55px;
+  }
+
+  .news-main-title {
+    font-size: 48px;
+  }
+
+  .news-image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .news-item{
+    transition: transform 0.3s ease;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .red-box {
+    flex-direction: column;
+    min-height: 1000px;
+  }
+
+  .agent-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+
+  .agent-image-double {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+  }
+
+  .agent-title {
+    font-size: 48px;
+  }
+
+  .agent-button {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+
+  .background{
+    margin: 0;
+  }
+
+  .map-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .map-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+
+  .map-image {
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+  }
+
+  .map-title {
+    font-size: 48px;
+  }
+
+  .map-subtitle {
+    font-size: 24px;
+  }
+
+  .map-button {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+}
