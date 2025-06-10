@@ -1,59 +1,62 @@
-<!-- Profile README.md -->
+<!-- PALORANT README.md -->
 
 <!-- Custom Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=9f3647&height=250&section=header&text=Welcome%20to%20My%20Hub%20🚀&fontSize=40&fontAlign=50&fontColor=ffffff" alt="banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=fa4454&height=200&section=header&text=PALORANT&fontSize=45&fontColor=ffffff&animation=fadeIn" alt="PALORANT Banner" />
 </p>
 
-### 👋 Hi there! I'm Imanuel Yusuf
-
-Welcome to my project "PALORANT"!  
-This project is created to fulfill the course Human and Computer Interaction.
+<p align="center"><em>🎮 A fan-made Valorant-inspired website with immersive UI and game-inspired features 🎯</em></p>
 
 ---
 
-## 🕹️ Featured Project: PALORANT
+## 🧠 About This Project
 
-![Valorant Logo](https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png)
+**PALORANT** is a creative fan project built to simulate the user experience of Valorant’s official site. It includes:
+- 🔫 Agent list with detailed profile pages
+- 🌍 Map browsing experience
+- 📰 News feed with article previews and detail views
+- 🐞 A working bug report form with validation & popup confirmation
+- 📱 Responsive design and clean layout using vanilla HTML/CSS/JS
 
-**PALORANT** is a tribute to *Valorant* — a fan-made interactive website that showcases:
-- 🧠 **Agents** with detailed views  
-- 🗺️ **Maps** and their lore  
-- 📰 **News** updates mimicking Riot’s official style  
-- 🐞 A custom **Bug Report** form with validation and popup feedback
-
-🛠️ Built with `HTML`, `CSS`, and `JavaScript`  
-🎨 Designed with Figma (See `PALORANT EDIT (1).fig` in the repo)  
-📁 [View the Repo »](https://github.com/ImanuelYusuf2006/PALORANT)
+> No frameworks. Just pure creativity.
 
 ---
 
-## 🎨 Case Studies / Design Projects
+## 🎨 Design & UX
 
-| Project        | Tools Used        | Summary                                   |
-|----------------|------------------|-------------------------------------------|
-| **PALORANT**   | HTML, CSS, JS, Figma | UI-rich fan site inspired by Valorant |
-| *Coming Soon*  | Figma, Webflow     | Responsive layout redesign (in progress)  |
+This project was **designed in Figma** and carefully translated into web form.
+
+| Page                 | Description                        |
+|----------------------|------------------------------------|
+| `index.html`         | Home / Landing page                |
+| `agents.html`        | Agent listing                      |
+| `agent_detail.html`  | Individual agent details           |
+| `maps_page.html`     | Explore in-game maps               |
+| `news_page.html`     | Valorant-style news blog           |
+| `news_detail.html`   | Full news article viewer           |
+| `bug_report.html`    | Report issues with form validation |
+
+Want to view the Figma file? Check: `PALORANT EDIT (1).fig`
 
 ---
 
-## 📊 GitHub Stats
+## 📈 GitHub Project Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ImanuelYusuf2006&show_icons=true&theme=radical" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ImanuelYusuf2006&layout=compact&theme=radical" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ImanuelYusuf2006&repo=PALORANT&theme=radical" />
 </p>
-
----
-
-## 🌐 Let's Connect!
-
-- 🎮 I love mixing **games + code**
-- ✨ I’m always learning and exploring design tools like Figma
-- 📫 You can reach me via [GitHub](https://github.com/ImanuelYusuf2006)
-
----
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=9f3647&height=150&section=footer"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ImanuelYusuf2006&repo=PALORANT&layout=compact&theme=radical" />
 </p>
+
+---
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/ImanuelYusuf2006/PALORANT.git
+cd PALORANT
+start index.html
