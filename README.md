@@ -48,8 +48,7 @@ While the final website looks slightly different, both share the same **visual t
 - Consistent visual hierarchy  
 - Desktop and mobile variants  
 
-> 🔗 *Add your Figma link here once uploaded.*
-
+> 🔗 https://www.figma.com/proto/VvfLNT6tGbOJCLCdeI9NlT/PALORANT-HCI?node-id=298-825&p=f&t=C5EMr3P7VMUqyrdd-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1
 ---
 
 ## 💻 Website Pages
